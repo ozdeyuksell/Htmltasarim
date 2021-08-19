@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu-bar{
+    background: cadetblue;
+    
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;  
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+}
+.menu-bar ul li a{
+    text-decoration: none; /* alt çizgi kalktı*/
+    color: white;
+    text-align: left; /* texk en sola hizalandı*/
+    font-size: 30px;
+}
+
+.sub-menu-1{
+    display: none;  /* seçenekler gizlendi*/
+}
+.menu-bar ul li:hover .sub-menu-1{
+
+    display: block;
+    position: absolute;
+    background: cadetblue;
+    margin-top: 15px;
+    margin-left: -15px; /* sağdan sola hizalandı*/
+    font-size: 2px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;  /* seçenekler alt alta hizalandı*/
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 160px;
+    padding: 10px;
+    
+    border-bottom: 1px; 
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+    cursor: pointer;  /* imlecin seçilecek sekmeye geldiğinde değişmesi*/
+    
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: thistle;  /*hover komutu ile seçilen yerin rengi değişti*/
+}
+.menu-bar ul li .text ul li{
+  width: 500px;
+ color: rgba(235, 243, 241, 0.767);
+ 
+ font-size: 20px;
+ 
+ position: absolute;
+
+      left: 130px;;
+      top:8px;
+
+      z-index: 1;
+}
+
+.fa-user-alt{
+    position: absolute;
+
+      right: 0;
+      top:50;
+
+      z-index: 1;
+      font-size: 40px;
+}
+.fa-flag{
+    position: absolute;
+
+      right: 50px;;
+      top:50;
+
+      z-index: 1;
+      font-size: 40px;
+
+}
+.menu-bar ul li .text-1 ul li{
+    color: white;
+    font-size: 20px;
+    width: 150px;
+    position: absolute;
+
+      right: 50px;;
+      top: 8px;;
+
+      z-index: 1;
+
+}
+.text-2{
+    font-size: 30px;
+    color:rgb(34, 33, 33);
+    position: absolute;
+
+      left: 50px;;
+      top: 80px;;
+
+      z-index: 1;
+}
+.testset-1 a {
+    display: inline-flex;
+    list-style: none;
+    text-decoration: none; /* alt çizgi kalktı*/
+    color: rgb(145, 86, 86);
+    text-align: left; /* texk en sola hizalandı*/
+    font-size: 20px;
+    
+
+    position: absolute;
+
+      left: 50px;;
+      top: 130px;;
+
+      z-index: 1;
+    
+      border-style: solid;
+      background: blanchedalmond;
+      text-indent:60px; /* satır genişliği*/
+      border-radius: 15px;  /*border kenarları yuvarlandı*/
+      
+      
+     
+}
+
+.soruseti a{
+    display: inline-flex;
+    list-style: none;
+    text-decoration: none; /* alt çizgi kalktı*/
+    color: rgb(145, 86, 86);
+    text-align: left; /* texk en sola hizalandı*/
+    font-size: 20px;
+    
+
+    position: absolute;
+
+      left: 200px;
+      top: 130px;
+
+      z-index: 1;
+    
+      border-style: solid;
+      background: blanchedalmond;
+      text-indent:60px; /* satır genişliği*/
+      border-radius: 15px;  /*border kenarları yuvarlandı*/
+}
+.fa-chevron-down{
+    position: absolute;
+
+      left: 60px;
+      top: 135px;
+
+      z-index: 1;
+      color: rgb(145, 86, 86);
+
+}
+.fa-plus-square{
+    position: absolute;
+
+    left: 220px;
+    top: 135px;
+
+    z-index: 1;
+    color: rgb(145, 86, 86);
+
+}
+
+      
+}
+.topnav {
+    float: left;
+    background-color: rgb(209, 204, 204);
+    overflow: hidden;
+    
+  }
+  
+
+  
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+      
+    float: left;
+    display: block;
+    color: #292626;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 6px solid transparent;
+    overflow: hidden;
+    
+ 
+  
+
+  }
+  
+  .topnav a:hover {
+    border-bottom: 3px solid red;
+  }
+  
+  .topnav a.active {
+    border-bottom: 3px solid red;
+  }
+  .topnav
+  {
+     position: absolute;
+
+     left:50px;
+     top:200px;
+
+     width: 400px;
+     display: inline-flex;
+
+     
+  }
+  
+  .topnav ul{
+    list-style-type:none; /*navbardaki nokta kaldırıldı*/
+  }
+
+  .button-1{
+    
+    position: relative;
+    left: 600px;
+    top: 20px;
+    
+    background-color: rgb(212, 239, 240);
+    color: rgb(230, 136, 136);
+    padding: 2px 15px;
+    text-align: left;
+    text-decoration: none;
+    
+
+  
+    
+  }
+
+ 
+
+  .button-2{
+    
+    position: relative;
+    left: 600px;
+    top: 20px;
+    
+    background-color: rgb(212, 239, 240);
+    color: rgb(230, 136, 136);
+    padding: 2px 15px;
+    text-align: left;
+    text-decoration: none;
+    
+  }
+
+  .button-3{
+    
+    position: relative;
+    left: 600px;
+    top: 20px;
+
+    background-color: rgb(212, 239, 240);
+    color: rgb(230, 136, 136);
+    padding: 2px 15px;
+    text-align: left;
+    text-decoration: none;
+   
+    
+  }
+
+  .button-4{
+    
+    position: relative;
+    left: 600px;
+    top: 20px;
+
+    background-color: rgb(212, 239, 240);
+    color: rgb(230, 136, 136);
+    padding: 2px 15px;
+    text-align: left;
+    text-decoration: none;
+    
+    
+  }
+  .button-5{
+
+    background-color: rgb(77, 83, 83);
+    color: rgb(248, 219, 219);
+    padding: 6px 20px;
+    text-align: left;
+    text-decoration: none;
+    
+  }
+  
+  .button-6{
+
+    background-color: rgb(77, 83, 83);
+    color: rgb(248, 219, 219);
+    padding: 6px 20px;
+    text-align: left;
+    text-decoration: none;
+    
+    position: relative;
+    left: 400px;
+    top: 20px;
+  }
+  
+
+    
